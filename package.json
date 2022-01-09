@@ -1,11 +1,11 @@
 {
   "name": "gtao-discounts-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeJS API to query the latest discounts and events of GTA:Online",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "POWRFULCOW89",
