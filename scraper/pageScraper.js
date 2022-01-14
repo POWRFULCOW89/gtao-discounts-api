@@ -26,12 +26,12 @@ const scraperObject = {
       return arr[0].innerText;
     });
 
-    let events = await page.$$eval(".cm-content p b", (arr) => {
+    let events = await page.$$eval(".cm-content p b:only-child", (arr) => {
       // Text parse
       arr = arr.map((el) => el.innerText);
 
       // Keeping titles only
-      arr = arr.filter((el) => el.toUpperCase() === el);
+      // arr = arr.filter((el) => el.toUpperCase() === el);
 
       // We are not interested in this
       let exclusions = ["RETURNING MODES", "TEE"];
