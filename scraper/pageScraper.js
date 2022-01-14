@@ -31,7 +31,7 @@ const scraperObject = {
       arr = arr.map((el) => el.innerText);
 
       // Keeping titles only
-      // arr = arr.filter((el) => el.toUpperCase() === el);
+      arr = arr.filter((el) => el.toUpperCase() === el);
 
       // We are not interested in this
       let exclusions = ["RETURNING MODES", "TEE"];
